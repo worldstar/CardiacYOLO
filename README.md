@@ -13,7 +13,7 @@ CardiacYOLO is a user-friendly, standalone desktop application designed to assis
 ## Features
 
 - **Drag-and-Drop Interface**: Simply drag medical images into the application
-- **Multi-Model Support**: Choose between YOLOv9, v16, v22, and YOLOv26 (default)
+- **Multi-Model Support**: Choose between YOLOv9 and YOLOv26 (default)
 - **Real-Time Inference**: Process images in 5-30 seconds (depending on hardware)
 - **DICOM Support**: Native support for DICOM medical image format
 - **Visual Results**: Bounding boxes with confidence scores and class labels
@@ -26,31 +26,7 @@ CardiacYOLO is a user-friendly, standalone desktop application designed to assis
 
 ## Installation
 
-### Option 1: Pre-built Executables (Recommended for Doctors)
-
-Download the latest release for your platform from the [Releases page](https://github.com/yourusername/CardiacYOLO/releases):
-
-- **Windows**: `CardiacYOLO-Setup-vX.X.X.exe`
-- **Mac**: `CardiacYOLO-vX.X.X.dmg`
-- **Linux**: `CardiacYOLO-vX.X.X.AppImage`
-
-#### Windows
-1. Download the `.exe` installer
-2. Double-click to run the setup wizard
-3. Follow the on-screen instructions
-4. Launch CardiacYOLO from the Start Menu
-
-#### Mac
-1. Download the `.dmg` file
-2. Open it and drag CardiacYOLO to Applications
-3. Right-click → Open (first time only, for Gatekeeper)
-
-#### Linux
-1. Download the `.AppImage` file
-2. Make it executable: `chmod +x CardiacYOLO-*.AppImage`
-3. Double-click to run
-
-### Option 2: From Source (Developers)
+### From Source (Developers)
 
 Requirements:
 - Python 3.10 or higher
@@ -163,8 +139,6 @@ CardiacYOLO/
 | Model | Speed | Accuracy | Best For |
 |-------|-------|----------|----------|
 | YOLOv9 | Fast | Good | Real-time inference, lower-end hardware |
-| YOLOv16 | Fast | Better | Balanced applications |
-| YOLOv22 | Medium | High | General purpose |
 | **YOLOv26** ⭐ | Medium | **Highest** | **Default — best general performance** |
 
 ---
@@ -173,22 +147,6 @@ CardiacYOLO/
 
 - **DICOM**: `.dcm`, `.dicom` (with full metadata support)
 - **Standard**: `.jpg`, `.jpeg`, `.png`, `.tiff`, `.tif`, `.bmp`
-
----
-
-## Citation
-
-If you use CardiacYOLO in your research, please cite our paper:
-
-```bibtex
-@article{chen2026cardiacyolo,
-  title={Mutual-Exclusivity Loss for View-Constrained Valvular Regurgitation
-         Detection in Color Doppler Echocardiography},
-  author={Chen, Shih-Hsin and Kao, Ting-Yi and Weng, Ken-Pen},
-  journal={IEEE Journal of Translational Engineering in Health and Medicine},
-  year={2026}
-}
-```
 
 ---
 
